@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <img class="leftImg" src="./assets/download.png" alt="logo" />
+
+        <div class="formContent">
+          <div class="formHeadings">
+            <h1>Welcome Back</h1>
+            <p>Enter your email and password to access your account</p>
+          </div>
+          <form id="formElement">
+            <div class="Email">
+              <label for="email">Email</label>
+              <input type="text" id="email" />
+            </div>
+            <div class="Password inputWrapper">
+              <label for="password">Password</label>
+              <input type="password" id="password"/>
+              <i class="far fa-eye" id="togglePassword" ></i>
+            </div>
+          
+            <div class="remember">
+              <div class="remember_left">
+                <input type="checkbox" id="check" />
+                <span class="me">Remember me</span>
+              </div>
+              <div class="passwordForgot">Forgot your password?</div>
+            </div>
+
+            <button type="submit">Log in</button>
+            
+          </form>
+          <p class="otherLogin"><span>Or login With</span></p>
+
+          <div class="socialSignup">
+            <button class="google btn">
+              <span><img src="./assets/google.png" alt="" /></span><span>Google</span>
+            </button>
+            <button class="apple btn">
+              <span><img src="./assets/apple.png" alt="" /></span><span>Apple</span>
+            </button>
+          </div>
+
+          <p class="register">
+            Don't have an account? <span>Register now</span>
+          </p>
+        </div>
+
+        <nav>
+          <p>Copyright © 2025 Selora Enterprises LTD.</p>
+          <p>Privacy policy</p>
+        </nav>
+      </div>
+
+      <div class="right">
+        <div class="blueColor">
+          <div class="leftContent">
+            <h1>Effortlessly manage your team and operations.</h1>
+            <p>Login to access your CRM dashboard and manage your team</p>
+
+            <img
+              src="./assets/user-panel-template-infographic-dashboard_23-2148378206.avif"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Javascript goes here -->
+    <script src="index.js"></script>
+  </body>
+</html>

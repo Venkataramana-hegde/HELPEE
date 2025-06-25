@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.laptopImage {
+  width: 230px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.bottom {
+  display: flex;
+}
+
+.bottomLeft {
+  width: 300px;
+  padding-top: 40px;
+  padding-left: 90px;
+  /* padding-bottom: 80px; */
+}
+
+.bottomRightContent {
+  display: flex;
+}
+
+.bottomRight {
+  margin-left: 200px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contentBox {
+  padding-right: 30px;
+  margin-top: 60px;
+  margin-left: 50px;
+  font-size: 0.9rem;
+}
+
+.contentBox:not(:last-child) {
+  border-right: 2px solid black;
+}
+
+.grayColor {
+  color: gray;
+}
+
+/* Top part goes here */
+.top {
+  height: 65vh;
+  width: 100%;
+  background-image: linear-gradient(white, lightgray);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin-bottom: 40px;
+  padding-left: 18px;
+}
+
+nav ul {
+  display: flex;
+  padding-left: 65px;
+  list-style: none;
+  gap: 40px;
+  font-size: large;
+  cursor: pointer;
+}
+
+nav button {
+  margin-right: 75px;
+  padding: 7px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#firstList {
+  margin-right: 60px;
+}
+
+.topContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.topLeftHeaders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerBlue {
+  color: blue;
+}
+
+#topImage {
+  width: 500px;
+}
+
+#topHeading {
+  font-size: 3rem;
+  font: bolder;
+  font-weight: bolder;
+  margin-right: 80px;
+}
+
+#trialText {
+  color: green;
+}
+
+#topParagraph {
+  color: gray;
+}
+
+#textImage {
+  margin-top: 15px;
+  width: 30px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.input-wrapper input {
+  padding-right: 100px;
+  padding-left: 30px;
+  height: 45px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+}
+
+.input-wrapper button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  height: 100%;
+  border-radius: 4px;
+  width: 100px;
+}
+
+.logos {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos p {
+  color: gray;
+}
+
+.logos img {
+  width: 80px;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  border: none;
+  margin-left: 15px;
+  
+}

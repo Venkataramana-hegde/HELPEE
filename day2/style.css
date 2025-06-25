@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p, span, button, div {
+  font-size: 0.9rem;
+}
+
+button {
+  border-radius: 5px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  height: 28px;
+  width: 350px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding-right: 10px;
+}
+
+input[type="checkbox"] {
+  accent-color: lightgray;
+  height: 15px;
+  width: auto;
+  margin-bottom: 0;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.left {
+  background: white;
+}
+
+.right .blueColor {
+  background: blue;
+  height: 100vh;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.leftImg {
+  width: 150px;
+  padding-left: 20px;
+}
+
+.leftContent {
+  padding: 120px 0 0 90px;
+  color: whitesmoke;
+}
+
+.leftContent img {
+  width: 500px;
+  margin-top: 30px;
+  border-radius: 7px;
+}
+
+/* ===== Form Section ===== */
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.formContent h1 {
+  padding: 0 0 20px 30px;
+}
+
+.formContent p {
+  padding-bottom: 30px;
+  color: gray;
+}
+
+.Email label,
+.Password label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.Email label {
+  margin-right: 315px;
+}
+
+.Password label {
+  margin-right: 284px;
+}
+
+/* === Input with eye icon === */
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputWrapper input {
+  padding-right: 40px;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 34px;
+  right: 170px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+}
+
+/* === Button Styling === */
+
+#formElement button {
+  width: 350px;
+  height: 35px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* === Remember Me and Forgot Password === */
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.remember_left {
+  display: flex;
+  align-items: center;
+  color: lightgray;
+}
+
+.remember input {
+  margin-right: 6px;
+  margin-bottom: 0;
+}
+
+.passwordForgot {
+  color: blue;
+  margin-bottom: 0;
+}
+
+.me {
+  margin-bottom: 0;
+}
+
+/* === Divider Line for Other Login === */
+
+.otherLogin {
+  padding-top: 20px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.otherLogin::before,
+.otherLogin::after {
+  background-color: lightgray;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 122px;
+}
+
+.otherLogin::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.otherLogin::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+/* === Social Login Buttons === */
+
+.socialSignup {
+  display: flex;
+  justify-content: center;
+}
+
+.socialSignup button {
+  width: 170px;
+  padding: 6px 10px;
+  background: whitesmoke;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+
+.socialSignup img {
+  width: 15px;
+  padding-right: 2px;
+}
+
+/* === Register === */
+
+.register {
+  margin-top: 15px;
+}
+
+.register span {
+  color: blue;
+}
+
+/* === Footer Nav === */
+
+nav {
+  margin-top: 35px;
+  color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
