@@ -9,7 +9,7 @@ This repo contains my day-wise learnings, mini-projects, and experiments using *
 
 | Day | Highlights |
 |-----|------------|
-| [Day 1](./day1) | Basic DOM login logic using vanilla JS |
+| [Day 1](./intro) | Basic DOM login logic using vanilla JS |
 | [Day 2](./day2) | Styled login page with HTML/CSS + dummy validation |
 | [Day 3](./day3) | Home page UI with form, subscription input, and `localStorage` logic |
 | [Day 5](./day5) | Migrated JS login + home logic to TypeScript |
