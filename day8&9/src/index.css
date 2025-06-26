@@ -1,0 +1,45 @@
+@import "tailwindcss";
+.otherLogin {
+  padding-top: 20px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.otherLogin::before,
+.otherLogin::after {
+  background-color: lightgray;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 122px;
+}
+
+.otherLogin::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.otherLogin::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputWrapper input {
+  padding-right: 40px;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 38px;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+} 
