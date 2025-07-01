@@ -5,7 +5,7 @@ This repo contains my day-wise learnings, mini-projects, and experiments using *
 
 ---
 
-## 📅 Week 1 – Getting Started (Days 1–9)
+## 📅 Week 1 – Getting Started (Days 1–11)
 
 | Day | Highlights |
 |-----|------------|
@@ -16,5 +16,7 @@ This repo contains my day-wise learnings, mini-projects, and experiments using *
 | [Day 6](./day6) | Followed a YouTube tutorial to build a Job Board App using React & Tailwind |
 | [Day 7](./day7) | Created Redux counter with async thunk using Redux Toolkit & TS |
 | [Day 8 & 9](./day8&9) | Rebuilt login page in React + used Redux for auth & todos fetching |
+| [Day 10](./day10/) | Practiced star, dropdown, search auto complete and calculator |
+| [Day 11](./day11/) | Explored apex charts - line, bar and donut |
 
 ---

@@ -1,12 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "../features/userSlice";
-import todoReducer from "../features/todoSlice";
+import ratingReducer from "./ratingSlice";
 
 const store = configureStore({
   reducer: {
-    user: userReducer,
-    todos: todoReducer,
-  }, 
+    rating: ratingReducer,
+  },
 });
 
 export type RootState = ReturnType<typeof store.getState>;
