@@ -18,5 +18,7 @@ This repo contains my day-wise learnings, mini-projects, and experiments using *
 | [Day 8 & 9](./day8&9) | Rebuilt login page in React + used Redux for auth & todos fetching |
 | [Day 10](./day10/) | Practiced star, dropdown, search auto complete and calculator |
 | [Day 11](./day11/) | Explored apex charts - line, bar and donut |
+| [Day 12](./day12/) | Built a todo app using react, tailwind, zustand and apex charts |
+| [Day 14](./day13/) | Migrated the todo app from previous day to ant design components | 
 
 ---

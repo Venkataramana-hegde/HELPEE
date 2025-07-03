@@ -1,0 +1,28 @@
+
+
+.addTaskBtn {
+  /* "text-white bg-pink-600 hover:bg-pink-800 p-2 ml-[5px] rounded-sm" */
+  color: white;
+  background-color:rgb(231, 24, 93); 
+  margin-left: 5px;
+}
+
+.addTaskBtn:hover {
+  color: white;
+  background-color:rgb(255, 3, 87); 
+  /* padding: 1rem; */
+  margin-left: 5px;
+}
+
+.marginTop {
+  margin-top: 5rem;
+}
+
+.marginAround {
+  margin:2rem;
+}
+
+.marginArise {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
