@@ -1,0 +1,46 @@
+const dateStr = `${currentYear}-${String(currentMonth + 1).padStart(2, "0")}-${String(i).padStart(2, "0")}`;
+const hasEvent = eventData[dateStr]?.length > 0;
+const hasNote = noteData[dateStr]?.length > 0;
+
+days.push(
+  <Card
+    key={`day-${i}`}
+    hoverable
+    onClick={(e) => {
+      e.stopPropagation();
+      setSelectedDate(dateStr);
+      setShowEventAndTask((prev) => prev && selectedDate === dateStr ? false : true); // toggle if same day
+      setMenuVisibility(false);
+    }}
+    onContextMenu={(e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      setSelectedDate(dateStr);
+      setMenuPosition({ x: e.clientX, y: e.clientY });
+      setMenuVisibility(true);
+      setShowEventAndTask(false);
+    }}
+    style={{
+      backgroundColor: isToday ? "#d8b4fe" : "#fff",
+      cursor: "pointer",
+      position: "relative",
+    }}
+  >
+    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+      <div>{i}</div>
+
+      {(hasEvent || hasNote) && (
+        <span
+          style={{
+            position: "absolute",
+            bottom: 4,
+            right: 6,
+            fontSize: "12px",
+          }}
+        >
+          {hasEvent && "📌"} {hasNote && "📝"}
+        </span>
+      )}
+    </div>
+  </Card>
+);
