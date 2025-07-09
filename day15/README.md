@@ -1,54 +1,27 @@
-# React + TypeScript + Vite
+#### 🎨 Day 15: Dashboard UI Replication from Dribbble
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🖼️ What I Did:
+- Picked a clean and modern **dashboard UI** from Dribbble as reference
+- Recreated the layout using **React + TypeScript** and **Tailwind CSS**
+- Matched typography, spacing, colors, and layout with high visual accuracy
 
-Currently, two official plugins are available:
+🧠 What I Focused On:
+- Practiced real-world UI replication from designer mockups
+- Understood the visual hierarchy (cards, stats, navbars, sidebars)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+🎯 Skills Sharpened:
+- CSS alignment & spacing tricks using `flex`, `gap`, and grid
+- Paying attention to **tiny design details** like shadows, border-radius, hover states, etc.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+📌 Tools Used:
+- 📦 `Tailwind CSS`
+- 🧠 `Dribble` design inspiration (UI reference)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🛠️ Observations:
+- Dribbble UIs are **pixel-perfect** — makes you appreciate front-end polish
+- Matching layout isn’t just about the **structure**, it’s about the **feel**
+- Great for understanding **design-to-code** translation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```

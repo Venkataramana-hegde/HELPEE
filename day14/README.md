@@ -1,54 +1,29 @@
-# React + TypeScript + Vite
+#### 📅 Day 14: Calendar App using React + TypeScript + Ant Design
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠 What I built:
+- A fully functional **calendar component** with:
+  - Dynamic **month and year navigation**
+  - Highlight for **today's date**
+  - Proper alignment using **day-of-week headers**
+  - Responsive layout using Ant Design’s `Row` and `Col`
+  - Custom styling with `Card`, `Title`, `Button`, and Ant Design icons
 
-Currently, two official plugins are available:
+💡 Key Features:
+- `getDaysInMonth` and `getFirstDayOfMonth` logic using native `Date`
+- Displays correct padding for start of month
+- Supports both **month** and **year** transitions
+- Highlights today using a different card color
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧠 Learnings:
+- Practiced working with date/time logic in JavaScript
+- Improved understanding of Ant Design layout system (`Row`, `Col`, `Card`)
+- Got comfortable handling UI conditionals (`isToday`, padding gaps)
+- Learned dynamic rendering of a grid-based calendar with elegance
 
-## Expanding the ESLint configuration
+🎯 What can be improved:
+- Add onClick event for selecting a day
+- Hook it up with an event/task system for each day
+- Maybe use `moment.js` or `date-fns` to simplify date logic
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+🔥 Reflection:
+> I always thought calendars were a pain to build, but once I broke it into pieces (days, weeks, months), it clicked. Ant Design made the UI part fun and elegant.

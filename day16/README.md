@@ -1,54 +1,30 @@
-# React + TypeScript + Vite
+#### 📅 Day 16: Advanced Calendar with Notes & Events – React + TypeScript + Ant Design
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔧 Features Built:
+- Dynamic, responsive **calendar grid** with Ant Design `Card`, `Row`, `Col`
+- **Right-click context menu** on any date to:
+  - Add events (with optional time)
+  - Add notes
+- **Left-click** to toggle a sidebar showing events/notes for the selected date
+- **Event & Note indicators** using icons (📌 🗒️)
+- Year and month navigation
+- Styled custom modals (without libraries) for event/note input
 
-Currently, two official plugins are available:
+🧠 What I Learned:
+- How to build a **custom context menu** in React using `onContextMenu`, `clientX/Y`, and controlled visibility
+- Storing **event data** and **note data** using `useState` objects with dynamic keys
+- **Controlled inputs** with Ant Design’s `Input` component for both text and time
+- Smart toggling of views (sidebar, modals) using layered state
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+💡 Cool Additions:
+- Used `react-icons` to show contextual hints for each day (like 👁‍🗨 events and 📝 notes)
+- Modular logic to keep calendar structure + event/note logic separate but cohesive
+- Carefully handled z-index and fixed positioning for popups and sidebars
 
-## Expanding the ESLint configuration
+🎯 Next Ideas:
+- Add edit/delete support for events and notes
+- Persist data using localStorage or backend API
+- Support recurring events or categories
+- Maybe add a theme toggle or mini-month view 📆
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
