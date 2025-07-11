@@ -5,7 +5,7 @@ This repo contains my day-wise learnings, mini-projects, and experiments using *
 
 ---
 
-## 📅 Week 1 – Getting Started (Days 1–11)
+## 📅 Week 1 – Getting Started (Days 1–19)
 
 | Day | Highlights |
 |-----|------------|
