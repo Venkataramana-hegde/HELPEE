@@ -19,6 +19,12 @@ This repo contains my day-wise learnings, mini-projects, and experiments using *
 | [Day 10](./day10/) | Practiced star, dropdown, search auto complete and calculator |
 | [Day 11](./day11/) | Explored apex charts - line, bar and donut |
 | [Day 12](./day12/) | Built a todo app using react, tailwind, zustand and apex charts |
-| [Day 14](./day13/) | Migrated the todo app from previous day to ant design components | 
+| [Day 13](./day13/) | Migrated the todo app from previous day to ant design components | 
+| [Day 14](./day14/) | Built a calendar using ant design, react + ts |
+| [Day 15](./day15/) | Replicate a UI of dashboard using react+ts, tailwind CSS |
+| [Day 16](./day16/) | Add custom context menu to add event and note functionality |
+| [Day 17](./day17/) | React class based components, useMemo, useCallback hooks and use params to fetch user details using react router for a login form |
+| [Day 18](./day18/) | Next.js, SEO, SSR and file based routing |
+| [Day 19](./day19/) | Graph QL and useQuery to fetch data |
 
 ---
